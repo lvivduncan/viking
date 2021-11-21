@@ -1,0 +1,124 @@
+
+/*
+меню, логотип і пошук 
+*/
+
+#menu 
+{
+    background: var(--light);
+    padding: var(--gap) 0;
+    position: relative;
+    z-index: 2;
+    transition: .5s;
+}
+
+#menu.fixed 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+}
+
+
+#menu .wrapper 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* меню зліва */
+#nav
+{
+
+}
+
+#nav-button 
+{
+    width: 40px;
+    height: 40px;
+    fill: var(--dark);
+    cursor: pointer;
+}
+
+#nav ul 
+{
+    display: flex;
+    gap: 0 calc(var(--gap)/2);
+
+    display: none;
+}
+
+#nav ul li 
+{
+    display: inline-block;
+}
+
+#nav ul li a 
+{
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--green);
+}
+
+#nav ul li a:hover
+{
+    color: var(--orange);
+}
+
+/* лого пприблизно в центрі */
+#logo
+{
+    /* font-weight: 800; */
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    /* border: 10px solid var(--orange); */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+    box-shadow: var(--box-shadow);
+}
+
+#logo.fixed 
+{
+    width: auto;
+    height: auto;
+    border-radius: unset;
+    box-shadow: none;
+}
+
+#logo a 
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#logo span 
+{
+    color: var(--orange);
+    text-transform: uppercase;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+/* пошук справа */
+#search-button
+{
+    width: 34px;
+    height: 34px;
+    fill: var(--dark);
+    cursor: pointer;
+}
+
