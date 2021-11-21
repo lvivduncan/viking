@@ -1,0 +1,14 @@
+
+#footer
+{
+    background: var(--orange);
+    color: var(--light);
+    padding: var(--gap3) 0;
+}
+
+#footer .wrapper 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

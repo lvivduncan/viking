@@ -1,0 +1,29 @@
+
+/* про компанію */
+#about
+{
+    font-size: 20px;
+    padding: 0 0 var(--gap3);
+}
+
+#about .wrapper 
+{
+    width: 600px;
+}
+
+#about p 
+{
+    margin: 0 0 var(--gap3);
+    line-height: 1.8;
+    text-align: justify;
+}
+
+#about ul 
+{
+    margin: var(--gap) 0 var(--gap) var(--gap);
+}
+
+#about li 
+{
+    margin: var(--gap) 0
+}

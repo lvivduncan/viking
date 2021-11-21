@@ -8,7 +8,7 @@
     background: var(--light);
     padding: var(--gap) 0;
     position: relative;
-    z-index: 2;
+    z-index: 5;
     transition: .5s;
 }
 
@@ -19,6 +19,7 @@
     left: 0;
     width: 100%;
     height: 80px;
+    box-shadow: var(--box-shadow);
 }
 
 
@@ -30,11 +31,6 @@
 }
 
 /* меню зліва */
-#nav
-{
-
-}
-
 #nav-button 
 {
     width: 40px;
@@ -43,17 +39,39 @@
     cursor: pointer;
 }
 
-#nav ul 
+#nav
+{
+    display: none;
+}
+
+#nav.active
+{
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .99);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* мобільне меню */
+#nav ul
 {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
     gap: 0 calc(var(--gap)/2);
-
-    display: none;
 }
 
 #nav ul li 
 {
-    display: inline-block;
+    display: block;
 }
 
 #nav ul li a 
@@ -64,6 +82,8 @@
     white-space: nowrap;
     text-decoration: none;
     color: var(--green);
+    padding: var(--gap);
+    display: block;
 }
 
 #nav ul li a:hover
@@ -74,17 +94,13 @@
 /* лого пприблизно в центрі */
 #logo
 {
-    /* font-weight: 800; */
-    text-align: center;
     height: 150px;
     width: 150px;
-    /* border: 10px solid var(--orange); */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
-
     box-shadow: var(--box-shadow);
 }
 
@@ -94,15 +110,21 @@
     height: auto;
     border-radius: unset;
     box-shadow: none;
+    align-items: flex-start;
 }
 
 #logo a 
 {
     text-decoration: none;
-    text-transform: uppercase;
     display: block;
     font-weight: 800;
     font-size: 20px;
+}
+
+#logo a:hover,
+#logo a:focus
+{
+    color: var(--orange);
 }
 
 #logo span 
@@ -111,6 +133,11 @@
     text-transform: uppercase;
     font-size: 11px;
     white-space: nowrap;
+}
+
+#logo.fixed span
+{
+    border-bottom: 1px solid var(--normal)
 }
 
 /* пошук справа */
@@ -122,3 +149,23 @@
     cursor: pointer;
 }
 
+/* прихована форма */
+#search
+{
+    display: none;
+}
+
+#search.active
+{
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .99);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
