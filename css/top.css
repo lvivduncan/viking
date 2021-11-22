@@ -17,16 +17,26 @@
     font-size: 14px;
 }
 
+@media(max-width:640px)
+{
+    #top .wrapper 
+    {
+        justify-content: center;
+    }    
+}
+
 #weather img 
 {
     width: 32px;
     height: 32px;
 }
 
-
-#top time 
+@media(max-width:640px)
 {
-    /* font-family: serif; */
+    #weather
+    {
+        display: none;
+    }
 }
 
 .social 
@@ -34,6 +44,7 @@
     display: flex;
     gap: calc(var(--gap)/2);
 }
+
 
 .social li 
 {

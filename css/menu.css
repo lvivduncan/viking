@@ -52,7 +52,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .99);
+    /* background: rgba(0, 0, 0, .99); */
+    background: rgba(255, 255, 255, .95);
 
     display: flex;
     align-items: center;
@@ -76,8 +77,8 @@
 
 #nav ul li a 
 {
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 800;
+    /* font-size: 14px; */
     text-transform: uppercase;
     white-space: nowrap;
     text-decoration: none;
@@ -163,9 +164,48 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .99);
+    /* background: rgba(0, 0, 0, .99); */
+    background: rgba(255, 255, 255, .95);
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#search form{
+    display: flex;
+    gap: var(--gap);
+}
+
+#search input 
+{
+    padding: var(--gap);
+    outline: none;
+    border: 2px solid var(--orange);
+}
+
+#search input:focus 
+{
+    border-color: var(--green);
+}
+
+#search button 
+{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+#search button svg 
+{
+    fill: var(--orange);
+    width: 42px;
+    height: 42px;
+}
+
+#search button:hover svg,
+#search button:focus svg
+{
+    fill: var(--green);
 }

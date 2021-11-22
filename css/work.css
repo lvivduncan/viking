@@ -9,6 +9,14 @@
     background: var(--gray);
 }
 
+@media(max-width:640px)
+{
+    #work
+    {
+        padding: 0 0 var(--gap);
+    }    
+}
+
 #work .wrapper 
 {
     display: grid;
@@ -17,6 +25,26 @@
     grid-template-areas:
         'work-1 work-2' 
         'work-1 work-3' 
+}
+
+@media(max-width:776px)
+{
+    #work .wrapper 
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:640px)
+{
+    #work .wrapper 
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'work-1'
+        'work-2' 
+        'work-3' 
+    }
 }
 
 #work article
@@ -100,4 +128,12 @@
 #work article:nth-of-type(1) picture
 {
     height: 820px;
+}
+
+@media(max-width:640px)
+{
+    #work article:nth-of-type(1) picture
+    {
+        height: 400px;
+    }    
 }

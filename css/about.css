@@ -11,12 +11,31 @@
     width: 600px;
 }
 
+@media(max-width:640px)
+{
+    #about .wrapper 
+    {
+        width: 95%;
+    }    
+}
+
 #about p 
 {
     margin: 0 0 var(--gap3);
     line-height: 1.8;
     text-align: justify;
 }
+
+@media(max-width:640px)
+{
+    #about p 
+    {
+        /* margin: 0 0 var(--gap3); */
+        line-height: 1.5;
+        text-align: center;
+    }    
+}
+
 
 #about ul 
 {

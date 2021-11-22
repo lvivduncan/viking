@@ -143,7 +143,9 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAARElEQVR4Ae3OAQYAIBQE0Y/u21H2IB2yYEGAFEvzGACmAADvdRczM12PmXEjbaYxwwwzh7QNqez3KaaYYkoVQu4GAMACdpNBa8xOosUAAAAASUVORK5CYII=") center center no-repeat;
+    /* background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAARElEQVR4Ae3OAQYAIBQE0Y/u21H2IB2yYEGAFEvzGACmAADvdRczM12PmXEjbaYxwwwzh7QNqez3KaaYYkoVQu4GAMACdpNBa8xOosUAAAAASUVORK5CYII=") center center no-repeat; */
+
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239d5944' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z'/%3E%3C/svg%3E");
 }
 
 .levus-horizontal-scroll .right {
@@ -155,5 +157,7 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAS0lEQVR4Ae3OsQ0AEBQGYYXSrkZ5gxjDYJA8jVKIv7gvuf4CAOCe7MnMNE9iqo6a0lRiiimmPoijsg0ZM8wwc0hqZjKlmcU8AMBLHcNiQx9bPHBBAAAAAElFTkSuQmCC") center center no-repeat;
+    /* background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAS0lEQVR4Ae3OsQ0AEBQGYYXSrkZ5gxjDYJA8jVKIv7gvuf4CAOCe7MnMNE9iqo6a0lRiiimmPoijsg0ZM8wwc0hqZjKlmcU8AMBLHcNiQx9bPHBBAAAAAElFTkSuQmCC") center center no-repeat; */
+
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239d5944' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/%3E%3C/svg%3E") center center no-repeat;
 }
