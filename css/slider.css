@@ -19,13 +19,13 @@
     }
 }
 
-@media(max-width:620px)
+/* @media(max-width:620px)
 {
     #slider 
     {
-        height: 20vh;
+        height: 300px;
     }
-}
+} */
 
 #slider ul 
 {
