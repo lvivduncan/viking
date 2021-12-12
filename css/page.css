@@ -1,0 +1,56 @@
+#page
+{
+    margin: 0 0 var(--gap3);
+    font-size: 20px;
+    background: var(--gray);
+}
+
+#page p
+{
+    margin: 0 0 var(--gap3);
+    line-height: 1.8;
+    text-align: justify;
+}
+
+#page figure
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--gap3);
+    margin: 0 0 var(--gap3);
+}
+
+@media(max-width:776px)
+{
+    #page figure
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #page figure picture
+    {
+        order: 1;
+    }
+
+    #page figure figcaption
+    {
+        order: 2;
+    }
+}
+
+#page ul,
+#page ol
+{
+    margin: 0 0 var(--gap3) var(--gap);
+}
+
+#page li 
+{
+    margin: var(--gap) 0;
+}
+
+#page strong,
+#page em
+{
+    color: var(--orange);
+}

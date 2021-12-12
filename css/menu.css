@@ -10,6 +10,8 @@
     position: relative;
     z-index: 5;
     transition: .5s;
+
+    height: 190px;
 }
 
 #menu.fixed 
@@ -103,12 +105,15 @@
     justify-content: center;
     flex-flow: column;
     box-shadow: var(--box-shadow);
+
+    transition: height .5s;
 }
 
 #logo.fixed 
 {
     width: auto;
-    height: auto;
+    /* height: auto; */
+    height: 38px;
     border-radius: unset;
     box-shadow: none;
     align-items: flex-start;
