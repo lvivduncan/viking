@@ -1,0 +1,29 @@
+.pagination
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap);
+    margin: var(--gap6) 0 var(--gap3);
+}
+
+.pagination li 
+{
+    display: block;
+}
+
+.pagination a
+{
+    display: block;
+    padding: calc(var(--gap) / 2) var(--gap);
+    background: var(--green);
+    color: var(--light);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.pagination a:hover,
+.pagination a:focus
+{
+    background: var(--orange);
+}

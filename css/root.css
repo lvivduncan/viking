@@ -213,3 +213,31 @@ img
 {
     visibility: visible;
 }
+
+/* обгортка для таблиць */
+.levus-table-wrapper
+{
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+
+/* для таблиці додано сніпет -- горизонтальна прокрутка */
+table,
+td,
+tr,
+th
+{
+    border-collapse: collapse;
+}
+
+td,
+tr,
+th
+{
+    padding: var(--gap);
+    border: 2px solid var(--green);
+    vertical-align: top;
+}
