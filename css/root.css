@@ -15,7 +15,8 @@ body
 
 body.fixed
 {
-    position: fixed;
+    /* position: fixed; */
+    width: 100%;
 }
 
 :root 

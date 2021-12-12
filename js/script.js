@@ -7,19 +7,41 @@ const menu = document.getElementById('menu')
 const logo = document.getElementById('logo')
 
 window.addEventListener('scroll', () => {
+/*     
     if(window.pageYOffset < 65){
+        
+        setTimeout( () => {
+            
+            menu.classList.remove('fixed')
+        }, 60)
 
-        menu.className = ''
-        logo.className = ''
-    } else if(window.pageYOffset > 70) {
+    } else if(window.pageYOffset >= 65) {
 
         setTimeout( () => {
             
-            menu.className = 'fixed'
-            logo.className = 'fixed'
-        }, 10)
+            menu.classList.add('fixed')
+        }, 60)
     }
-});
+ */
+    if(menu){
+        if(window.pageYOffset < 62){
+            
+            menu.classList.remove('fixed')
+            setTimeout( () => {
+                
+            }, 500)
+
+        } else {
+
+            menu.classList.add('fixed')
+            setTimeout( () => {
+                
+            }, 500)
+        }
+    }
+
+    
+})
 
 // slider 
 const slider = document.querySelectorAll('#slider li')
@@ -262,15 +284,19 @@ document.addEventListener('keydown', event => {
 
 // https://lvivduncan.github.io/levus-table/
 {
-    const table = document.querySelectorAll('table');
+    const table = document.querySelectorAll('table')
 
     if (table.length > 0) {
+
         table.forEach(item => {
-            const wrapper = document.createElement('div');
-            wrapper.className = 'levus-table-wrapper';
-            const table = item.cloneNode(true);
-            item.replaceWith(wrapper);
-            wrapper.append(table);
-        });
+
+            const wrapper = document.createElement('div')
+            wrapper.className = 'levus-table-wrapper'
+            const table = item.cloneNode(true)
+            item.replaceWith(wrapper)
+            wrapper.append(table)
+        })
     }
 }
+
+// 12-12-21

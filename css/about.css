@@ -8,10 +8,10 @@
 
 #about .wrapper 
 {
-    width: 600px;
+    width: 750px;
 }
 
-@media(max-width:640px)
+@media(max-width:770px)
 {
     #about .wrapper 
     {
