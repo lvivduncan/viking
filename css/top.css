@@ -25,26 +25,39 @@
     }    
 }
 
-#weather img 
+#weather
 {
-    width: 32px;
-    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-@media(max-width:640px)
+@media(max-width:776px)
 {
     #weather
     {
         display: none;
-    }
+    }    
 }
+
+#weather .booked-wzsp-day-number,
+#weather .booked-wzsp-day-dergee
+{
+    color: var(--light)!important;
+}
+
+.booked-wzsp-prime-data .booked-wzsp-day-number
+{
+    font-size: 30px!important;
+    line-height: 30px!important;
+}
+
 
 .social 
 {
     display: flex;
     gap: calc(var(--gap)/2);
 }
-
 
 .social li 
 {
