@@ -20,6 +20,11 @@
     margin: 0 0 var(--gap3);
 }
 
+#page figure figcaption > *:nth-last-child()
+{
+    margin: 0;
+}
+
 @media(max-width:776px)
 {
     #page figure
