@@ -20,7 +20,12 @@
     margin: 0 0 var(--gap3);
 }
 
-#page figure figcaption > *:nth-last-child()
+#page figure picture
+{
+    margin-top: 10px;
+}
+
+#page figure figcaption > *:last-child
 {
     margin: 0;
 }
