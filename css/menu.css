@@ -22,6 +22,14 @@
     height: 80px;
 }
 
+@media(max-width:776px)
+{
+    #spacer
+    {
+        height: 120px;
+    }
+}
+
 #menu.fixed 
 {
     position: fixed;
