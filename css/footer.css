@@ -35,3 +35,14 @@
         margin: var(--gap) 0 0
     }
 }
+
+#footer a
+{
+    color: var(--light);
+}
+
+#footer a:hover,
+#footer a:focus
+{
+    text-decoration: none;
+}
